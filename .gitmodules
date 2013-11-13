@@ -1,0 +1,6 @@
+[submodule "sublime-text-3/Packages/sublime-c99"]
+	path = sublime-text-3/Packages/sublime-c99
+	url = https://github.com/noct/sublime-c99.git
+[submodule "sublime-text-3/Packages/sublime-cpp11"]
+	path = sublime-text-3/Packages/sublime-cpp11
+	url = https://github.com/noct/sublime-cpp11.git
