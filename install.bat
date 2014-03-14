@@ -14,6 +14,8 @@ mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.aliases" "%cd%/.aliases"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bash_profile" "%cd%/.bash_profile"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bash_prompt" "%cd%/.bash_prompt"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bashrc" "%cd%/.bashrc"
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.gitconfig" "%cd%/.gitconfig"
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.hgrc" "%cd%/.hgrc"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.profile" "%cd%/.profile"
 
 "terminal/base16-ocean.reg"
