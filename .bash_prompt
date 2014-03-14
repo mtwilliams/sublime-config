@@ -1,0 +1,9 @@
+function parse_git_dirty() {
+  [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+}
+
+function parse_git_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+
+export PS1="\n\[\033[0;31m\]\u \[\033[m\]at \[\033[0;33m\]\h \[\033[m\]in \[\033[0;32m\]\w\[\033[m\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[\033[0;35m\]\$(parse_git_branch)\[\033[m\]\n\$ \[\033[m\]"

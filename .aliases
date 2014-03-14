@@ -1,0 +1,2 @@
+alias l="ls --almost-all -lF"
+alias map="xargs -n1"

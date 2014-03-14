@@ -10,4 +10,10 @@ mklink /D "C:/Users/%USERNAME%/AppData/Roaming/Sublime Text 3/Packages/sublime-c
 
 echo Setting up Terminal
 
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.aliases" "%cd%/.aliases"
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bash_profile" "%cd%/.bash_profile"
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bash_prompt" "%cd%/.bash_prompt"
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bashrc" "%cd%/.bashrc"
+mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.profile" "%cd%/.profile"
+
 "terminal/base16-ocean.reg"
