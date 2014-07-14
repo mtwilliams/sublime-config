@@ -17,10 +17,30 @@ sudo ln -s `pwd`/sublime-text-3/Packages/sublime-cpp11 $home/.config/sublime-tex
 
 echo Setting up Shell
 
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.aliases" "%cd%/.aliases"
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bash_profile" "%cd%/.bash_profile"
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bash_prompt" "%cd%/.bash_prompt"
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.bashrc" "%cd%/.bashrc"
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.gitconfig" "%cd%/.gitconfig"
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.hgrc" "%cd%/.hgrc"
-# mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.profile" "%cd%/.profile"
+sudo unlink $home/.gitconfig
+sudo rm $home/.gitconfig
+sudo ln -s `pwd`/.gitconfig $home/.gitconfig
+
+sudo unlink $home/.hgrc
+sudo rm $home/.hgrc
+sudo ln -s `pwd`/.hgrc $home/.hgrc
+
+sudo unlink $home/.profile
+sudo rm $home/.profile
+sudo ln -s `pwd`/.profile $home/.profile
+
+sudo unlink $home/.bash_profile
+sudo rm $home/.bash_profile
+sudo ln -s `pwd`/.bash_profile $home/.bash_profile
+
+sudo unlink $home/.aliases
+sudo rm $home/.aliases
+sudo ln -s `pwd`/.aliases $home/.aliases
+
+sudo unlink $home/.bashrc
+sudo rm $home/.bashrc
+sudo ln -s `pwd`/.bashrc $home/.bashrc
+
+sudo unlink $home/.bash_prompt
+sudo rm $home/.bash_prompt
+sudo ln -s `pwd`/.bash_prompt $home/.bash_prompt
