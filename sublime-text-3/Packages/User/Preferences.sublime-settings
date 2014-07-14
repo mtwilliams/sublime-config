@@ -4,8 +4,10 @@
 // Theme
 //
 
-"theme": "Spacegray.sublime-theme",
-"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+"theme": "Soda Light 3.sublime-theme",
+"color_scheme": "Packages/Base16 Color Schemes/base16-mocha.dark.tmTheme",
+"soda_classic_tabs": true,
+"soda_folder_icons": true,
 
 //===----------------------------------------------------------------------===//
 // Font
