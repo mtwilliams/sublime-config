@@ -17,7 +17,10 @@ shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-shopt -s globstar
+case $( uname -s ) in
+Linux) shopt -s globstar;;
+*) ;;
+esac
 
 # Make less more friendly for non-text input files, see lesspipe(1).
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -88,4 +91,7 @@ fi
 PATH=$PATH:$HOME/.rvm/bin
 
 # Add direnv hook.
-eval "$(direnv hook bash)"
+case $( uname -s ) in
+Linux) eval "$(direnv hook bash)";;
+*) ;;
+esac
