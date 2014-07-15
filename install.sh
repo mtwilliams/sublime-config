@@ -20,27 +20,34 @@ echo Setting up Shell
 sudo unlink $home/.gitconfig
 sudo rm $home/.gitconfig
 sudo ln -s `pwd`/.gitconfig $home/.gitconfig
+sudo chmod a+x $home/.gitconfig
 
 sudo unlink $home/.hgrc
 sudo rm $home/.hgrc
 sudo ln -s `pwd`/.hgrc $home/.hgrc
+sudo chmod a+x $home/.hgrc
 
 sudo unlink $home/.profile
 sudo rm $home/.profile
 sudo ln -s `pwd`/.profile $home/.profile
+sudo chmod a+x $home/.profile
 
 sudo unlink $home/.bash_profile
 sudo rm $home/.bash_profile
 sudo ln -s `pwd`/.bash_profile $home/.bash_profile
+sudo chmod a+x $home/.bash_profile
 
 sudo unlink $home/.aliases
 sudo rm $home/.aliases
 sudo ln -s `pwd`/.aliases $home/.aliases
+sudo chmod a+x $home/.aliases
 
 sudo unlink $home/.bashrc
 sudo rm $home/.bashrc
 sudo ln -s `pwd`/.bashrc $home/.bashrc
+sudo chmod a+x $home/.bashrc
 
 sudo unlink $home/.bash_prompt
 sudo rm $home/.bash_prompt
 sudo ln -s `pwd`/.bash_prompt $home/.bash_prompt
+sudo chmod a+x $home/.bash_prompt
