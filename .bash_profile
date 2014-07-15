@@ -77,7 +77,7 @@ fi
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-for file in ~/.{bash_prompt,aliases}; do
+for file in ~/.{bash_prompt,bash_color_scheme,aliases}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file

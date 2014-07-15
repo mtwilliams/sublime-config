@@ -51,3 +51,8 @@ sudo unlink $home/.bash_prompt
 sudo rm $home/.bash_prompt
 sudo ln -s `pwd`/.bash_prompt $home/.bash_prompt
 sudo chmod a+x $home/.bash_prompt
+
+sudo unlink $home/.bash_color_scheme
+sudo rm $home/.bash_color_scheme
+sudo ln -s `pwd`/terminal/color-schemes/shell/base16-mocha.sh $home/.bash_color_scheme
+sudo chmod a+x $home/.bash_color_scheme
