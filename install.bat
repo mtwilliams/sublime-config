@@ -3,6 +3,7 @@
 echo Setting up Sublime Text 3...
 echo Make sure to install Pacakge Control,
 echo  and to install "Theme - Spacegray"
+echo  as well as "Base16 Color Schemes"
 
 mklink "C:/Users/%USERNAME%/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings" "%cd%/sublime-text-3/Packages/User/Preferences.sublime-settings"
 mklink /D "C:/Users/%USERNAME%/AppData/Roaming/Sublime Text 3/Packages/sublime-c99" "%cd%/sublime-text-3/Packages/sublime-c99"
@@ -18,4 +19,4 @@ mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.gitconfig" "%cd%/.gitconfig"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.hgrc" "%cd%/.hgrc"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.profile" "%cd%/.profile"
 
-"terminal/base16-ocean.reg"
+"terminal/color-schemes/cmd/base16-mocha.reg"
