@@ -2,7 +2,7 @@
 
 echo Setting up Sublime Text 3...
 echo Make sure to install Pacakge Control,
-echo  and to install "Theme - Spacegray"
+echo  and to install "Theme - Soda"
 echo  as well as "Base16 Color Schemes"
 
 home=$HOME
