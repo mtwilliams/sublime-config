@@ -89,9 +89,13 @@ fi
 
 # Add RVM to PATH.
 PATH=$PATH:$HOME/.rvm/bin
-
+ 
 # Add direnv hook.
 case $( uname -s ) in
-Linux) eval "$(direnv hook bash)";;
+Linux)
+  # Fig >:|
+  export DOCKER_HOST=unix:///var/run/docker.sock
+  # Add direnv hook.
+  eval "$(direnv hook bash)";;
 *) ;;
 esac
