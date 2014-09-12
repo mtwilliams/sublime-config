@@ -19,4 +19,4 @@ mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.gitconfig" "%cd%/.gitconfig"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.hgrc" "%cd%/.hgrc"
 mklink "C:/MinGW/msys/1.0/home/%USERNAME%/.profile" "%cd%/.profile"
 
-"terminal/color-schemes/cmd/base16-mocha.reg"
+"terminal/color-schemes/cmd/base16-solarized.reg"
